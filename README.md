@@ -8,7 +8,8 @@ Link -> https://www.youtube.com/watch?v=VqgTr-nd7Cg&list=PL-J2q3Ga50oMQa1JdSJxYo
 
 ## 1) Create React Project
 
-Go to the terminal and type - 
+Go to the terminal and type -
+
    npx create-react-app name-of-app
 
 ## 2) Setup Firebase
