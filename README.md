@@ -45,9 +45,13 @@ Create a new file App.js in src folder and type -
 import React from 'react';
 
 const App = () => {
+
     return (
+    
         type sup in h1 form
+        
     )
+    
 }
 
 export default App
