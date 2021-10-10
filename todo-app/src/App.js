@@ -1,16 +1,19 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 const App = () => {
+    const [todos, setTodos] = useState(["Go to bath", "Go to code"])
+
     return (
         <div className="App">
-            <h1>sup</h1>
+            <h1>TODO App</h1>
 
             <input />
             <button>Add TODO</button>
 
             <ul>
-                <li>Go to bath</li>
-                <li>Go to code</li>
+                {todos.map(todo => (
+                    <li>{todo}</li>
+                ))}
             </ul>
         </div>
     )
