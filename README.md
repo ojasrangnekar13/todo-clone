@@ -59,7 +59,9 @@ export default App</b>
 After this go to index.js and modify your code by typing this - 
 
 <b>import React from 'react';
+   
 import ReactDOM from 'react-dom';
+   
 import App from './App.js'
 
 const reactContent = document.getElementById('root')
