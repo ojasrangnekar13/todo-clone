@@ -13,4 +13,11 @@ Go to the terminal and type -
    npx create-react-app name-of-app
 
 ## 2) Setup Firebase
-## 3) 
+## 3) Start running your React Project
+
+Go to terminal type - 
+
+npm start
+
+If it doesnt work check whether you have done properly or you can see the above tutorial.
+
