@@ -10,7 +10,7 @@ Link -> https://www.youtube.com/watch?v=VqgTr-nd7Cg&list=PL-J2q3Ga50oMQa1JdSJxYo
 
 Go to the terminal and type -
 
-   npx create-react-app name-of-app
+   <b>npx create-react-app name-of-app</b>
 
 ## 2) Setup Firebase
 ## 3) Start running your React Project
@@ -29,12 +29,12 @@ Delete all files from source folder except index.js
 
 In index.js delete the whole code and type the following - 
 
-import React from 'react';
+<b>import React from 'react';
 import ReactDOM from 'react-dom';
 
 const reactContent = document.getElementById('root')
 
-ReactDOM.render('sup', reactContent)
+ReactDOM.render('sup', reactContent)</b>
 
 Later reload your react page, you will be able to see 'sup' on the webpage 
 
@@ -42,7 +42,7 @@ Later reload your react page, you will be able to see 'sup' on the webpage
 
 Create a new file App.js in src folder and type - 
 
-import React from 'react';
+<b>import React from 'react';
 
 const App = () => {
 
@@ -54,17 +54,17 @@ const App = () => {
     
 }
 
-export default App
+export default App</b>
 
 After this go to index.js and modify your code by typing this - 
 
-import React from 'react';
+<b>import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App.js'
 
 const reactContent = document.getElementById('root')
 
-ReactDOM.render(<App/>, reactContent)
+ReactDOM.render(<App/>, reactContent)</b>
 
 Reload your webpage and you will see 'sup' in h1 form 
 
