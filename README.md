@@ -17,7 +17,7 @@ Go to the terminal and type -
 
 Go to terminal type - 
 
-npm start
+<b>npm start</b>
 
 If it doesnt work check whether you have done properly or you can see the above tutorial.
 
