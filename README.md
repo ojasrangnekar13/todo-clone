@@ -48,7 +48,7 @@ const App = () => {
 
     return (
     
-        type sup in h1 form
+        <h1>sup</h1>
         
     )
     
