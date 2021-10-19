@@ -72,3 +72,30 @@ ReactDOM.render(<App/>, reactContent)</b>
 
 Reload your webpage and you will see 'sup' in h1 form 
 
+## 7) Update your App.js Code
+
+
+<b>import React, {useState} from 'react';
+
+const App = () => {
+    const [todos, setTodos] = useState(["Go to bath", "Go to code", "Go to see Naruto", "Go to study"])</b>
+
+    return (
+        <div className="App">
+            <h1>TODO App</h1>
+
+            <input />
+            <button>Add TODO</button>
+
+            <ul>
+                {todos.map(todo => (
+                    <li>{todo}</li>
+                ))}
+            </ul>
+        </div>
+    )
+}
+
+<b>export default App </b>
+
+If you dont understand the code you can see the youtube video 
