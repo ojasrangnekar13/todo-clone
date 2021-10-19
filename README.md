@@ -10,14 +10,14 @@ Link -> https://www.youtube.com/watch?v=VqgTr-nd7Cg&list=PL-J2q3Ga50oMQa1JdSJxYo
 
 Go to the terminal and type -
 
-   <b>npx create-react-app name-of-app</b>
+    npx create-react-app name-of-app
 
 ## 2) Setup Firebase
 ## 3) Start running your React Project
 
 Go to terminal type - 
 
-<b>npm start</b>
+    npm start
 
 If it doesnt work check whether you have done properly or you can see the above tutorial.
 
@@ -29,12 +29,12 @@ Delete all files from source folder except index.js
 
 In index.js delete the whole code and type the following - 
 
-<b>import React from 'react';
-import ReactDOM from 'react-dom';
+     import React from 'react';
+     import ReactDOM from 'react-dom';
 
-const reactContent = document.getElementById('root')
+     const reactContent = document.getElementById('root')
 
-ReactDOM.render('sup', reactContent)</b>
+     ReactDOM.render('sup', reactContent)
 
 Later reload your react page, you will be able to see 'sup' on the webpage 
 
@@ -42,9 +42,9 @@ Later reload your react page, you will be able to see 'sup' on the webpage
 
 Create a new file App.js in src folder and type - 
 
-<b>import React from 'react';
+    import React from 'react';
 
-const App = () => {
+    const App = () => {
    
     return (
     
@@ -52,22 +52,22 @@ const App = () => {
         
     )
     
-}
+    }
 
-export default App</b>
+    export default App
 
 After this go to index.js and modify your code by typing this - 
 
 
-<b>import React from 'react';
+    import React from 'react';
    
-import ReactDOM from 'react-dom';
+    import ReactDOM from 'react-dom';
    
-import App from './App.js'
+    import App from './App.js'
 
-const reactContent = document.getElementById('root')
+    const reactContent = document.getElementById('root')
 
-ReactDOM.render(<App/>, reactContent)</b>
+    ReactDOM.render(<App/>, reactContent)
 
 
 Reload your webpage and you will see 'sup' in h1 form 
@@ -75,10 +75,10 @@ Reload your webpage and you will see 'sup' in h1 form
 ## 7) Update your App.js Code
 
 
-<b>import React, {useState} from 'react';
+    import React, {useState} from 'react';
 
-const App = () => {
-    const [todos, setTodos] = useState(["Go to bath", "Go to code", "Go to see Naruto", "Go to study"])</b>
+    const App = () => {
+    const [todos, setTodos] = useState(["Go to bath", "Go to code", "Go to see Naruto", "Go to study"])
 
     return (
         <div className="App">
@@ -94,8 +94,66 @@ const App = () => {
             </ul>
         </div>
     )
-}
+    }
 
-<b>export default App </b>
+    export default App 
 
 If you dont understand the code you can see the youtube video 
+
+## 8) addTodo Function 
+
+    import React, {useState} from 'react';
+
+    const App = () => {
+    const [todos, setTodos] = useState(["Go to bath", "Go to code", "Go to see Naruto", "Go to study"])
+    const [input, setInput] = useState("")
+
+    const addTodo = (event) => {
+        setTodos([...todos, input])
+    }
+
+    return (
+        <div className="App">
+            <h1>TODO App</h1>
+
+            <input value = {input} onChange={event => setInput(event.target.value)}/>
+            <button onClick={addTodo}>Add TODO</button>
+
+            <ul>
+                {todos.map(todo => (
+                    <li>{todo}</li>
+                ))}
+            </ul>
+        </div>
+    )
+    }
+
+    export default App
+
+The following code has been added 
+
+
+       const addTodo = (event) => {
+            setTodos([...todos, input])
+       }
+
+## 9) Doesnt Work by entering 
+
+If you press enter after typing your todo it doesnt work, you need to press the TODO button to add the todo.
+
+To improve this we can do the following code - 
+For addTodo function -
+
+    const addTodo = (event) => {
+        event.preventDefault();
+        setTodos([...todos, input])
+    }
+    
+For input and button code - 
+
+            <form>
+                <input value = {input} onChange={event => setInput(event.target.value)}/>
+                <button type = "submit" onClick={addTodo}>Add TODO</button>
+            </form>
+            
+       
