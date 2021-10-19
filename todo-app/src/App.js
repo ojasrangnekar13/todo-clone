@@ -5,15 +5,19 @@ const App = () => {
     const [input, setInput] = useState("")
 
     const addTodo = (event) => {
+        event.preventDefault();
         setTodos([...todos, input])
+        setInput('')
     }
 
     return (
         <div className="App">
             <h1>TODO App</h1>
 
-            <input value = {input} onChange={event => setInput(event.target.value)}/>
-            <button onClick={addTodo}>Add TODO</button>
+            <form>
+                <input value = {input} onChange={event => setInput(event.target.value)}/>
+                <button type = "submit" onClick={addTodo}>Add TODO</button>
+            </form>
 
             <ul>
                 {todos.map(todo => (
