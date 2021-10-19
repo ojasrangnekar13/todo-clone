@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Todo from './Todo.js'
 
 const App = () => {
     const [todos, setTodos] = useState(["Go to bath", "Go to code", "Go to see Naruto", "Go to study"])
@@ -21,7 +22,7 @@ const App = () => {
             
             <ul>
                 {todos.map(todo => (
-                    <li>{todo}</li>
+                    <Todo text = {todo}/>
                 ))}
             </ul>
         </div>
