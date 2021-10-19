@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Button from '@mui/material/Button';
 
 const App = () => {
     const [todos, setTodos] = useState(["Go to bath", "Go to code", "Go to see Naruto", "Go to study"])
@@ -16,9 +17,9 @@ const App = () => {
 
             <form>
                 <input value = {input} onChange={event => setInput(event.target.value)}/>
-                <button type = "submit" onClick={addTodo}>Add TODO</button>
+                <Button variant="outlined">Primary</Button>
             </form>
-
+            
             <ul>
                 {todos.map(todo => (
                     <li>{todo}</li>
