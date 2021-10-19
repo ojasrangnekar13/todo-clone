@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 const App = () => {
-    const [todos, setTodos] = useState(["Go to bath", "Go to code", "Go to see Naruto"])
+    const [todos, setTodos] = useState(["Go to bath", "Go to code", "Go to see Naruto", "Go to study"])
 
     return (
         <div className="App">
