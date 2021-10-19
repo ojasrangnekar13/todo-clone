@@ -45,7 +45,7 @@ Create a new file App.js in src folder and type -
 <b>import React from 'react';
 
 const App = () => {
-
+   
     return (
     
         <h1>sup</h1>
@@ -58,6 +58,7 @@ export default App</b>
 
 After this go to index.js and modify your code by typing this - 
 
+
 <b>import React from 'react';
    
 import ReactDOM from 'react-dom';
@@ -67,6 +68,7 @@ import App from './App.js'
 const reactContent = document.getElementById('root')
 
 ReactDOM.render(<App/>, reactContent)</b>
+
 
 Reload your webpage and you will see 'sup' in h1 form 
 
