@@ -174,16 +174,16 @@ import React from 'react'
     
 Then delete the following code from App.js - 
 
-     <ul>
-                {todos.map(todo => (
-    <li>{todo}</li>
-                ))}
+            <ul>
+              {todos.map(todo => (
+                 <li>{todo}</li>
+               ))}
             </ul>
 
 And replce it with the following code - 
 
-         <ul>
-                {todos.map(todo => (
-                    <Todo text = {todo}/>
-                ))}
+            <ul>
+              {todos.map(todo => (
+                 <Todo text = {todo}/>
+               ))}
             </ul>
