@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Todo from './Todo.js'
+import './App.css'
 
 const App = () => {
     const [todos, setTodos] = useState(["Go to bath", "Go to code", "Go to see Naruto", "Go to study"])
