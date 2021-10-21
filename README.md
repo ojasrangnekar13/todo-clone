@@ -156,4 +156,34 @@ For input and button code -
                 <button type = "submit" onClick={addTodo}>Add TODO</button>
             </form>
             
-       
+## 10) Create a new file Todo.js 
+
+After creating the file type the following code - 
+
+import React from 'react'
+
+    function Todo(props) {
+       return (
+        <div>
+            <li>{props.text}</li>
+        </div>
+    )
+    }
+
+    export default Todo
+    
+Then delete the following code from App.js - 
+
+            <ul>
+              {todos.map(todo => (
+                 <li>{todo}</li>
+               ))}
+            </ul>
+
+And replce it with the following code - 
+
+            <ul>
+              {todos.map(todo => (
+                 <Todo text = {todo}/>
+               ))}
+            </ul>
