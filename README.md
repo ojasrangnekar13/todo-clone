@@ -218,3 +218,23 @@ Type the following code in App.css
     }
     
 Now see the change in your Todo App 
+
+## 12) Connect your code to firebase database
+
+Make a new file firebase.js nad type the following code - 
+
+    import firebase from 'firebase';
+
+    const firebaseApp = firebase.initialiseApp({
+         apiKey: "apikey",
+         authDomain: "todo-app-664c7.firebaseapp.com",
+         projectId: "todo-app-664c7",
+         storageBucket: "todo-app-664c7.appspot.com",
+         messagingSenderId: "861448113760",
+         appId: "appid",
+         measurementId: "lol"
+    })
+
+    const db = firebaseApp.firestore()
+
+    export {db}
