@@ -187,3 +187,34 @@ And replce it with the following code -
                  <Todo text = {todo}/>
                ))}
             </ul>
+
+## 11) Creating new file Todo.css and App.css
+
+After creatig the file, type the following code in <b>Todo.js</b>
+
+       import './Todo.css'
+       
+Type the following code in <b>App.js</b>
+
+       import './App.css'
+       
+This code will import the both css files in their respective js files
+Now type the following code in Todo.css 
+
+      ul {
+         padding-left: 400px;
+      }
+
+Type the following code in App.css
+
+    input {
+       margin-left: 700px;
+       padding-left: 50px;
+       padding-right: 50px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+    
+Now see the change in your Todo App 
